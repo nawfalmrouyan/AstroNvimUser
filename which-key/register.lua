@@ -34,6 +34,16 @@ return {
       },
       ["M"] = { "<CMD>MarkdownPreview<CR>", "Markdown Preview" },
       ["m"] = { "<CMD>Glow<CR>", "Markdown Preview" },
+      ["F"] = {
+        name = "FZF",
+        c = { "<cmd>lua require('fzf-lua').grep_cword()<cr>", "Find cword" },
+        C = { "<cmd>lua require('fzf-lua').grep_cWORD()<cr>", "Find cWORD" },
+        g = { "<cmd>lua require('fzf-lua').live_grep()<cr>", "Live grep" },
+        G = { "<cmd>lua require('fzf-lua').live_grep_resume()<cr>", "Live grep resume" },
+        f = { "<cmd>lua require('fzf-lua').files()<cr>", "Find files" },
+        r = { "<cmd>lua require('fzf-lua').resume()<cr>", "Resume last search" },
+        t = { "<cmd>lua require('fzf-lua').tabs()<cr>", "Resume last search" },
+      },
     },
   },
 }

@@ -26,6 +26,8 @@ return {
     ["<M-$"] = { "g$", desc = "Go to end of line wrap" },
     ["</"] = { "ms/" },
     ["<M-=>"] = { ":TZFocus<cr>" },
+    ["<C-p>"] = { "<cmd>lua require('fzf-lua').files()<cr>", desc = "Find files" },
+    ["<C-0>"] = { ":FzfLua ", desc = "FzfLua" },
   },
   t = {
     ["<esc>"] = { "<C-\\><C-N>", desc = "Escape terminal mode" },
