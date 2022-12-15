@@ -2,15 +2,17 @@
 return {
   automatic_installation = true,
   ensure_installed = {
+    "bashls",
     "clangd",
     "cssls",
+    "emmet_ls",
     "html",
-    "marksman",
     "jsonls",
     "pyright",
-    "sqls",
     "sumneko_lua",
+    "tailwindcss",
     "tsserver",
     "yamlls",
+    "zk",
   },
 }
