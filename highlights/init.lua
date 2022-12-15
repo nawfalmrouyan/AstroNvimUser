@@ -5,11 +5,11 @@ local bg_alt = astronvim.get_hlgroup("Visual").bg
 local green = astronvim.get_hlgroup("String").fg
 local red = astronvim.get_hlgroup("Error").fg -- Add highlight groups in any theme
 return {
-  BufferLineTabClose = { fg = "#1e222a", bg = "#1e222a" },
-  BufferLineBufferSelected = { fg = "#abb2bf", bg = "#1e222a" },
-  NormalNC = { fg = "#abb2bf", bg = "#1e222a" },
-  WinBar = { fg = "#5c6370", bg = "#1e222a" },
-  WinBarNC = { fg = "#5c6370", bg = "#1e222a" },
+  -- BufferLineTabClose = { fg = "#1e222a", bg = "#1e222a" },
+  -- BufferLineBufferSelected = { fg = "#abb2bf", bg = "#1e222a" },
+  -- NormalNC = { fg = "#abb2bf", bg = "#1e222a" },
+  -- WinBar = { fg = "#5c6370", bg = "#1e222a" },
+  -- WinBarNC = { fg = "#5c6370", bg = "#1e222a" },
   --VS code cmp
   CmpItemKindConstructor = { fg = "#f28b25" },
   CmpItemKindUnit = { fg = "#D4D4D4" },
