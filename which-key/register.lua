@@ -23,7 +23,7 @@ return {
       ["y"] = { "<CMD>Codi<CR>", "Codi" },
       ["Y"] = { "<CMD>Codi!<CR>", "Clear Codi" },
       ["Z"] = { ":ZenMode<CR>", "Zen Mode" },
-      ["t"] = {
+      ["T"] = {
         name = "Diagnostics",
         t = { "<cmd>TroubleToggle<cr>", "trouble" },
         w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "workspace" },
