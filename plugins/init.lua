@@ -1,71 +1,53 @@
 return {
   { "folke/zen-mode.nvim", cmd = { "ZenMode" }, config = function() require("user.plugins.zen-mode").config() end },
-  { "ray-x/lsp_signature.nvim", event = "BufRead", config = function() require("lsp_signature").setup() end },
-  { "michaeljsmith/vim-indent-object", event = "BufRead" },
+  {
+    "ray-x/lsp_signature.nvim",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "lsp_signature.nvim") end,
+    config = function() require("lsp_signature").setup() end,
+  },
+  {
+    "michaeljsmith/vim-indent-object",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "vim-indent-object") end,
+  },
   { "tweekmonster/startuptime.vim", cmd = "StartupTime" },
   {
     "kevinhwang91/nvim-bqf",
-    event = { "BufRead", "BufNew" },
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "nvim-bqf") end,
     config = function() require("user.plugins.nvim-bqf").config() end,
   },
   { "romgrk/fzy-lua-native" },
   { "nvim-telescope/telescope-fzy-native.nvim", run = "make" },
-  { "mg979/vim-visual-multi", event = "BufEnter" }, -- vim -Nu ~/.local/share/lunarvim/site/pack/packer/start/vim-visual-multi/tutorialrc
+  {
+    "mg979/vim-visual-multi",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "vim-visual-multi") end,
+  }, -- vim -Nu ~/.local/share/lunarvim/site/pack/packer/start/vim-visual-multi/tutorialrc
   { "nvim-treesitter/nvim-treesitter-textobjects", before = "nvim-treesitter" },
-  { "mzlogin/vim-markdown-toc", event = "BufRead" },
   {
     "kylechui/nvim-surround",
-    event = "BufEnter",
-    config = function()
-      require("nvim-surround").setup {
-        keymaps = {
-          insert = "<C-g>z",
-          insert_line = "gC-ggZ",
-          normal = "gz",
-          normal_cur = "gZ",
-          normal_line = "gzz",
-          normal_cur_line = "gZZ",
-          visual = "gz",
-          visual_line = "gZ",
-          delete = "gzd",
-          change = "gzr",
-        },
-      }
-    end,
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "nvim-surround") end,
+    config = function() require("user.plugins.nvim_surround").config() end,
   },
   {
     "kevinhwang91/nvim-ufo",
-    event = "BufRead",
     requires = "kevinhwang91/promise-async",
     config = function() require("user.plugins.nvim-ufo").config() end,
   },
   {
     "ellisonleao/glow.nvim",
-    -- setup = function() lvim.builtin.which_key.mappings["m"] = { "<CMD>Glow<CR>", "Markdown Preview" } end,
-    config = function()
-      require("glow").setup {
-        border = "rounded",
-      }
-    end,
+    setup = function() table.insert(astronvim.file_plugins, "glow.nvim") end,
+    config = function() require("glow").setup { border = "rounded" } end,
     ft = "markdown",
   },
   {
     "mickael-menu/zk-nvim",
-    -- setup = function()
-    --   lvim.builtin.which_key.mappings["z"] = {
-    --     name = "Zk",
-    --     T = { "<CMD>ZkNotes<CR>", "All Notes" },
-    --     nf = { "<CMD>ZkNew {dir='fleeting'}<CR>", "New fleeting note" },
-    --     nl = { "<CMD>ZkNew {dir='literature'}<CR>", "New literature note" },
-    --     np = { "<CMD>ZkNew {dir='permanent'}<CR>", "New permanent note" },
-    --     o = { "<CMD>ZkOrphans<CR>", "Orphan notes" },
-    --     r = { "<CMD>ZkRecents<CR>", "Recent notes" },
-    --     t = { "<CMD>ZkTags<CR>", "Tags" },
-    --     f = { "<Cmd>ZkNotes { sort = { 'modified' }, match = vim.fn.input('Search: ') }<CR>" },
-    --   }
-    -- end,
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "zk-nvim") end,
     config = function() require("user.plugins.zk-nvim").config() end,
-    event = "BufRead",
   },
   {
     "catppuccin/nvim",
@@ -75,6 +57,7 @@ return {
   },
   {
     "iamcco/markdown-preview.nvim",
+    setup = function() table.insert(astronvim.file_plugins, "markdown-preview.nvim") end,
     run = "cd app && npm install",
     config = function() vim.g.mkdp_browser = "firefoxMD" end,
     ft = "markdown",
@@ -88,7 +71,8 @@ return {
   },
   {
     "mbbill/undotree",
-    event = "BufRead",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "undotree") end,
   },
   {
     "andymass/vim-matchup",
@@ -97,41 +81,48 @@ return {
   },
   {
     "uga-rosa/ccc.nvim",
-    event = "BufRead",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "ccc.nvim") end,
     config = function() require("user.plugins.ccc").config() end,
   },
   {
     "f-person/git-blame.nvim",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "git-blame.nvim") end,
     config = function()
       vim.cmd "highlight default link gitblame SpecialComment"
       vim.g.gitblame_enabled = 0
     end,
-    event = "BufRead",
   },
   {
     "monaqa/dial.nvim",
-    event = "BufRead",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "dial.nvim") end,
     config = function() require("user.plugins.dial").config() end,
   },
   {
     "nacro90/numb.nvim",
-    event = "BufRead",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "numb.nvim") end,
     config = function() require("user.plugins.numb").config() end,
   },
   {
     "karb94/neoscroll.nvim",
-    event = "BufRead",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "neoscroll.nvim") end,
     config = function() require("user.plugins.neoscroll").config() end,
   },
   {
     "metakirby5/codi.vim",
+    setup = function() table.insert(astronvim.file_plugins, "codi.vim") end,
     cmd = "Codi",
     ft = { "python", "javascript", "php" },
   },
   {
     "ggandor/leap.nvim",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "leap.nvim") end,
     config = function() require("leap").set_default_keymaps() end,
-    event = "BufRead",
   },
   {
     "ggandor/flit.nvim",
@@ -173,11 +164,13 @@ return {
   },
   {
     "Pocco81/true-zen.nvim",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "true-zen.nvim") end,
     config = function() require("true-zen").setup {} end,
-    event = "BufRead",
   },
   {
     "folke/trouble.nvim",
+    setup = function() table.insert(astronvim.file_plugins, "trouble.nvim") end,
     cmd = "TroubleToggle",
   },
   {
@@ -187,11 +180,9 @@ return {
   },
   {
     "j-hui/fidget.nvim",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "fidget.nvim") end,
     config = function() require("fidget").setup() end,
   },
   { "christoomey/vim-tmux-navigator" },
-  {
-    "folke/lsp-colors.nvim",
-    event = "BufRead",
-  },
 }
