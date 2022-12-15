@@ -1,4 +1,6 @@
 return {
+  { "stevearc/aerial.nvim", disable = true },
+  { "max397574/better-escape.nvim", disable = true },
   { "folke/zen-mode.nvim", cmd = { "ZenMode" }, config = function() require("user.plugins.zen-mode").config() end },
   {
     "ray-x/lsp_signature.nvim",
