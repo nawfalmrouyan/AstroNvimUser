@@ -11,6 +11,7 @@ return {
     ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" },
     ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
     ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
+    ["<leader>lo"] = { "<cmd>Lspsaga outline<cr>", desc = "Symbols outline" },
 
     -- Open file in browser
     ["<space>r"] = { ":exe ':silent !firefox %'<cr>", desc = "Run Browser" },
