@@ -2,9 +2,7 @@ local M = {}
 
 M.config = function()
   local status_ok, zk = pcall(require, "zk")
-  if not status_ok then
-    return
-  end
+  if not status_ok then return end
   zk.setup {
     picker = "telescope",
     lsp = {
@@ -19,7 +17,6 @@ M.config = function()
     },
   }
 
-  local zk = require "zk"
   local commands = require "zk.commands"
 
   local function make_edit_fn(defaults, picker_options)

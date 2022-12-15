@@ -1,11 +1,8 @@
 local M = {}
 
 M.config = function()
-
   local status_ok, augend = pcall(require, "dial.augend")
-  if not status_ok then
-    return
-  end
+  if not status_ok then return end
 
   require("dial.config").augends:register_group {
     default = {
@@ -18,7 +15,7 @@ M.config = function()
       augend.constant.alias.bool,
       augend.constant.alias.alpha,
       augend.constant.alias.Alpha,
-      augend.hexcolor.new{
+      augend.hexcolor.new {
         case = "lower",
       },
       augend.semver.alias.semver,
@@ -42,7 +39,6 @@ M.config = function()
   vim.api.nvim_set_keymap("v", "<C-x>", require("dial.map").dec_visual(), { noremap = true })
   vim.api.nvim_set_keymap("v", "g<C-a>", require("dial.map").inc_gvisual(), { noremap = true })
   vim.api.nvim_set_keymap("v", "g<C-x>", require("dial.map").dec_gvisual(), { noremap = true })
-
 end
 
 return M
