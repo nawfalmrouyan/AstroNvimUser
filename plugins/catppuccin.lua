@@ -3,14 +3,14 @@ local M = {}
 M.config = function()
   local status_ok, catppuccin = pcall(require, "catppuccin")
   if not status_ok then return end
-  vim.g.catppuccin_flavour = "macchiato"
+  vim.g.catppuccin_flavour = "mocha"
   catppuccin.setup {
     dim_inactive = {
-      enabled = false,
+      enabled = true,
       shade = "dark",
       percentage = 0.15,
     },
-    transparent_background = false,
+    transparent_background = true,
     term_colors = true,
     compile = {
       enabled = true,
@@ -32,9 +32,9 @@ M.config = function()
     },
     require("catppuccin").setup {
       integrations = {
-        aerial = false,
-        barbar = true,
-        beacon = false,
+        aerial = true,
+        barbar = false,
+        beacon = true,
         cmp = true,
         coc_nvim = false,
         dashboard = true,
@@ -44,7 +44,7 @@ M.config = function()
         gitsigns = true,
         harpoon = false,
         hop = false,
-        illuminate = true,
+        illuminate = false,
         leap = true,
         lightspeed = false,
         lsp_saga = true,
@@ -53,16 +53,16 @@ M.config = function()
         mini = false,
         neogit = false,
         neotest = false,
-        neotree = false,
-        notify = false,
-        nvimtree = true,
+        neotree = true,
+        notify = true,
+        nvimtree = false,
         overseer = false,
         pounce = false,
-        symbols_outline = false,
+        symbols_outline = true,
         telekasten = false,
         telescope = true,
         treesitter = true,
-        treesitter_context = false,
+        treesitter_context = true,
         ts_rainbow = true,
         vim_sneak = false,
         vimwiki = false,
@@ -70,12 +70,12 @@ M.config = function()
 
         -- Special integrations, see https://github.com/catppuccin/nvim#special-integrations
         dap = {
-          enabled = false,
-          enable_ui = false,
+          enabled = true,
+          enable_ui = true,
         },
         indent_blankline = {
           enabled = true,
-          colored_indent_levels = false,
+          colored_indent_levels = true,
         },
         native_lsp = {
           enabled = true,
@@ -93,7 +93,7 @@ M.config = function()
           },
         },
         navic = {
-          enabled = true,
+          enabled = false,
           custom_bg = "NONE",
         },
       },
