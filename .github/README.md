@@ -8,11 +8,11 @@
 
 ## 🌟 Preview
 
-![Screenshot_2022-12-16-07-51-44_7829](https://user-images.githubusercontent.com/10271030/207992696-518aade7-c1f2-4e75-80cc-f96cd7511823.png)
+![Screenshot_2022-12-17-02-05-13_28745](https://user-images.githubusercontent.com/10271030/208161666-aad54f69-4d5a-442a-bb91-e5e78f2f7ca8.png)
 
-![Screenshot_2022-12-16-08-05-03_23603](https://user-images.githubusercontent.com/10271030/207992703-031e5c0f-7b14-4af0-b8bc-2eeac1b67828.png)
+![Screenshot_2022-12-17-02-05-02_17903](https://user-images.githubusercontent.com/10271030/208161677-92dda0f9-f325-4905-9787-3572f797f6aa.png)
 
-![Screenshot_2022-12-16-08-07-50_8060](https://user-images.githubusercontent.com/10271030/207992711-68d2d633-3ebb-4a85-8901-54ba6b36c995.png)
+![Screenshot_2022-12-17-02-07-03_15929](https://user-images.githubusercontent.com/10271030/208161686-53b917e7-fa18-48c3-9250-67094b4c32ff.png)
 
 ## 🛠 Installation
 
