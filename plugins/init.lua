@@ -212,6 +212,10 @@ return {
     requires = { "kyazdani42/nvim-web-devicons" },
     opt = true,
     setup = function() table.insert(astronvim.file_plugins, "fzf-lua") end,
-    event = "BufRead",
+  },
+  {
+    "wakatime/vim-wakatime",
+    opt = true,
+    setup = function() table.insert(astronvim.file_plugins, "vim-wakatime") end,
   },
 }
