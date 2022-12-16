@@ -3,14 +3,14 @@ local M = {}
 M.config = function()
   local status_ok, catppuccin = pcall(require, "catppuccin")
   if not status_ok then return end
-  vim.g.catppuccin_flavour = "frappe"
+  vim.g.catppuccin_flavour = "mocha"
   catppuccin.setup {
     dim_inactive = {
-      enabled = true,
+      enabled = false,
       shade = "dark",
       percentage = 0.15,
     },
-    transparent_background = false,
+    transparent_background = true,
     term_colors = true,
     compile = {
       enabled = true,
@@ -54,11 +54,11 @@ M.config = function()
         neogit = false,
         neotest = false,
         neotree = true,
-        notify = true,
+        notify = false,
         nvimtree = false,
         overseer = false,
         pounce = false,
-        symbols_outline = true,
+        symbols_outline = false,
         telekasten = false,
         telescope = true,
         treesitter = true,
@@ -75,7 +75,7 @@ M.config = function()
         },
         indent_blankline = {
           enabled = true,
-          colored_indent_levels = false,
+          colored_indent_levels = true,
         },
         native_lsp = {
           enabled = true,
