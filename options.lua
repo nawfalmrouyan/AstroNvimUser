@@ -2,11 +2,10 @@ return {
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   opt = {
     -- set to true or false etc.
-    completeopt = { "menuone", "noselect" },
     hidden = true,
     swapfile = false,
     hlsearch = true,
-    showmode = true,
+    showmode = false,
     shiftwidth = 2,
     expandtab = true,
     ruler = false,
