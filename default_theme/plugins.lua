@@ -8,7 +8,7 @@ return {
   highlighturl = true,
   indent_blankline = true,
   ["neo-tree"] = true,
-  notify = true,
+  notify = false,
   ["nvim-web-devicons"] = true,
   rainbow = true,
   telescope = true,
