@@ -27,6 +27,7 @@ return {
     cmdheight = 1,
     showbreak = "﬌ ",
     inccommand = "split",
+    foldoptions = "nodigits",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
