@@ -1,6 +1,6 @@
 -- enable or disable highlighting for extra plugins
 return {
-  aerial = false,
+  aerial = true,
   beacon = true,
   bufferline = true,
   cmp = true,
