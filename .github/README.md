@@ -8,6 +8,12 @@
 
 ## 🌟 Preview
 
+![Screenshot_2022-12-16-07-51-44_7829](https://user-images.githubusercontent.com/10271030/207992696-518aade7-c1f2-4e75-80cc-f96cd7511823.png)
+
+![Screenshot_2022-12-16-08-05-03_23603](https://user-images.githubusercontent.com/10271030/207992703-031e5c0f-7b14-4af0-b8bc-2eeac1b67828.png)
+
+![Screenshot_2022-12-16-08-07-50_8060](https://user-images.githubusercontent.com/10271030/207992711-68d2d633-3ebb-4a85-8901-54ba6b36c995.png)
+
 ## 🛠 Installation
 
 - Install AstroNvim
